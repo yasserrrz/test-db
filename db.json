@@ -1,0 +1,28 @@
+{
+    "products": [
+        {
+            "product_id": 1,
+            "product_name": "Iphone 14",
+            "product_desc": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ex odio labore exercitationem mollitia, a, consequuntur ut architecto illo quod natus adipisci hic! Ipsa a soluta fuga aliquid dolor harum.",
+            "product_category": "Smart Phones"
+        },
+        {
+            "product_id": 2,
+            "product_name": "Iphone 13 Pro Max",
+            "product_desc": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ex odio labore exercitationem mollitia, a, consequuntur ut architecto illo quod natus adipisci hic! Ipsa a soluta fuga aliquid dolor harum.",
+            "product_category": "Smart Phones"
+        },
+        {
+            "product_id": 3,
+            "product_name": "Apple",
+            "product_desc": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ex odio labore exercitationem mollitia, a, consequuntur ut architecto illo quod natus adipisci hic! Ipsa a soluta fuga aliquid dolor harum.",
+            "product_category": "Laptop"
+        },
+        {
+            "product_id": 4,
+            "product_name": "Dell",
+            "product_desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ex odio labore exercitationem mollitia, a, consequuntur ut architecto illo quod natus adipisci hic! Ipsa a soluta fuga aliquid dolor harum.",
+            "product_category": "Laptop"
+        }
+    ]
+}

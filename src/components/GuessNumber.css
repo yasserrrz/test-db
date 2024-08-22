@@ -1,0 +1,60 @@
+/* Container styling */
+.game-container {
+    background-color: #8bf083;
+    padding: 30px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    /*Roundedcorners*/
+    box-shadow: -20px -20px 10px rgba(0, 0, 0, 0.5);
+    /*Darkshadow*/
+    max-width: 550px;
+    margin: auto;
+}
+
+/* Title styling */
+.game-title {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+}
+
+/* Attempt feedback styling */
+.attempt-feedback {
+    font-size: 1.3rem;
+    color: #333;
+    text-align: center;
+}
+
+/* Feedback message styling */
+.feedback {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #444;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Input and form styling */
+.guess-form {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.guess-input {
+    display: inline-block;
+    width: 100px;
+    margin-left: 10px;
+    font-size: 1.2rem;
+    padding: 5px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.guess-button {
+    margin-left: 10px;
+    font-size: 1.1rem;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
