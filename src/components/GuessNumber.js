@@ -26,8 +26,8 @@ const GuessNumber = () => {
             return;
         }
 
-        if (isNaN(guessNumber) || guessNumber < 1 || guessNumber > 100) {
-            setFeedback("Please enter a number between 1 and 100.");
+        if (isNaN(guessNumber) || guessNumber < 0 || guessNumber > 100) {
+            setFeedback("Please enter a number between 0 and 100.");
             return;
         }
 
@@ -63,7 +63,7 @@ const GuessNumber = () => {
             <p className="feedback">{feedback}</p>
             <form onSubmit={handleGuessSubmit} className="guess-form">
                 <label>
-                    Guess the number between 1 and 100:
+                    Guess the number between 0 and 100:
                     <input
                         type="number"
                         value={guess}
