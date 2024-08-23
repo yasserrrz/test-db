@@ -69,7 +69,7 @@ const GuessNumber = () => {
                         value={guess}
                         onChange={handleGuessChange}
                         className="form-control guess-input"
-                        min="1"
+                        min="0"
                         max="100"
                         disabled={gameOver}
                     />
