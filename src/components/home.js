@@ -46,7 +46,7 @@ const Home = () => {
     return (
         <div className="container mt-5">
             <header className="d-flex justify-content-between align-items-center">
-                <h1 className="text-danger fw-bold fst-italic">Shop Now</h1>
+                <h1 className="text-danger">Shop Now</h1>
                 <nav>
                     <a href="#" className="text-secondary mx-3 text-decoration-none">Home</a>
                     <a href="#new-product" className="text-secondary text-decoration-none">New Product</a>
@@ -60,7 +60,7 @@ const Home = () => {
                     {categories[category].map(product => (
                         <div key={product.product_id} className="mb-3">
                             <h5 className="text-danger">{product.product_name}</h5>
-                            <p>{product.product_desc}</p>
+                            <p className="fst-italic">{product.product_desc}</p> {/* Italicized description */}
                         </div>
                     ))}
                 </div>
@@ -107,7 +107,7 @@ const Home = () => {
                             required
                         />
                     </div>
-                    <button type="submit" className="btn btn-danger">Add Product</button>
+                    <button type="submit" className="btn btn-primary">Add Product</button>
                 </form>
             </div>
         </div>
