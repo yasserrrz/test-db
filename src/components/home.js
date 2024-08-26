@@ -36,6 +36,7 @@ const Home = () => {
             });
             if (response.ok) {
                 setIsFloatingWindowVisible(false); // Close the floating window after adding the product
+                // Refresh data by triggering useFetch hook
                 window.location.reload(); // Reload page to show the new product
             }
         } catch (error) {
@@ -49,7 +50,11 @@ const Home = () => {
                 method: 'DELETE',
             });
             if (response.ok) {
+                console.log('Product deleted successfully');
+                // Refresh data by triggering useFetch hook
                 window.location.reload(); // Reload page to update the product list
+            } else {
+                console.error('Failed to delete product. Status:', response.status);
             }
         } catch (error) {
             console.error('Error deleting product:', error);
@@ -83,14 +88,14 @@ const Home = () => {
                     <h3 className="text-dark" id="home">{category}</h3>
                     <hr /> {/* The line separating categories */}
                     {categories[category].map(product => (
-                        <div key={product.product_id} className="mb-3 d-flex justify-content-between align-items-center">
+                        <div key={product.id} className="mb-3 d-flex justify-content-between align-items-center">
                             <div>
                                 <h5 className="text-danger mb-1">{product.product_name}</h5>
                                 <p className="mb-0">{product.product_desc}</p>
                             </div>
                             <button
                                 className="btn btn-danger"
-                                onClick={() => handleDeleteProduct(product.product_id)}
+                                onClick={() => handleDeleteProduct(product.id)}
                             >
                                 Delete
                             </button>
