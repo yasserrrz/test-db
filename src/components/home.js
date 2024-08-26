@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useFetch } from './useFetch';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './Home.css'; // Import the custom CSS for additional styling
 
 const Home = () => {
     const { data: products, loading, error } = useFetch('http://localhost:5000/products');
@@ -44,8 +45,8 @@ const Home = () => {
     if (error) return <div className="text-center mt-5 text-danger">Error: {error}</div>;
 
     return (
-        <div className="container mt-5">
-            <header className="d-flex justify-content-between align-items-center">
+        <div className="container mt-5 shadow-lg p-4 rounded custom-bg"> {/* Custom styles applied */}
+            <header className="d-flex justify-content-between align-items-center mb-4">
                 <h1 className="text-danger">Shop Now</h1>
                 <nav>
                     <a href="#" className="text-secondary mx-3 text-decoration-none">Home</a>
