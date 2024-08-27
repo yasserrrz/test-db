@@ -1,38 +1,24 @@
 {
-    "products": [
-        {
-            "product_id": 1,
-            "product_name": "Iphone 14",
-            "product_desc": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ex odio labore exercitationem mollitia, a, consequuntur ut architecto illo quod natus adipisci hic! Ipsa a soluta fuga aliquid dolor harum.",
-            "product_category": "Smart Phones",
-            "id": "f916"
-        },
-        {
-            "product_id": 2,
-            "product_name": "Iphone 13 Pro Max",
-            "product_desc": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ex odio labore exercitationem mollitia, a, consequuntur ut architecto illo quod natus adipisci hic! Ipsa a soluta fuga aliquid dolor harum.",
-            "product_category": "Smart Phones",
-            "id": "063b"
-        },
-        {
-            "product_id": 3,
-            "product_name": "Apple",
-            "product_desc": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ex odio labore exercitationem mollitia, a, consequuntur ut architecto illo quod natus adipisci hic! Ipsa a soluta fuga aliquid dolor harum.",
-            "product_category": "Laptop",
-            "id": "0b6f"
-        },
-        {
-            "product_id": 4,
-            "product_name": "Dell",
-            "product_desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ex odio labore exercitationem mollitia, a, consequuntur ut architecto illo quod natus adipisci hic! Ipsa a soluta fuga aliquid dolor harum.",
-            "product_category": "Laptop",
-            "id": "16fc"
-        },
-        {
-            "id": "fc79",
-            "product_name": "Hp",
-            "product_desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ex odio labore exercitationem mollitia, a, consequuntur ut architecto illo quod natus adipisci hic! Ipsa a soluta fuga aliquid dolor harum.",
-            "product_category": "Laptop"
-        }
-    ]
+  "products": [
+    {
+      "product_id": 3,
+      "product_name": "Apple",
+      "product_desc": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ex odio labore exercitationem mollitia, a, consequuntur ut architecto illo quod natus adipisci hic! Ipsa a soluta fuga aliquid dolor harum.",
+      "product_category": "Laptop",
+      "id": "0b6f"
+    },
+    {
+      "product_id": 4,
+      "product_name": "Dell",
+      "product_desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ex odio labore exercitationem mollitia, a, consequuntur ut architecto illo quod natus adipisci hic! Ipsa a soluta fuga aliquid dolor harum.",
+      "product_category": "Laptop",
+      "id": "16fc"
+    },
+    {
+      "id": "efcb",
+      "product_name": "dsdsd",
+      "product_desc": "dsdsd",
+      "product_category": "dsds"
+    }
+  ]
 }

@@ -1,0 +1,9 @@
+{
+    "public": ".",
+    "routes": [
+      {
+        "src": "/db.json",
+        "dest": "db.json"
+      }
+    ]
+  }
