@@ -46,7 +46,7 @@ const Home = () => {
 
     const handleDeleteProduct = async (id) => {
         try {
-            const response = await fetch(`/api/db/products/${id}`, {
+            const response = await fetch(`http://localhost:5000/products/${id}`, {
                 method: 'DELETE',
             });
             if (response.ok) {

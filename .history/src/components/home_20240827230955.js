@@ -4,7 +4,7 @@ import './home.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Home = () => {
-    const { data: products, loading, error } = useFetch('/api/db/products');
+    const { data: products, loading, error } = useFetch('/api/products');
     const [newProduct, setNewProduct] = useState({
         product_name: '',
         product_desc: '',
@@ -27,7 +27,7 @@ const Home = () => {
     const handleAddProduct = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch('/api/db/products', {
+            const response = await fetch('/api/products', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -46,7 +46,7 @@ const Home = () => {
 
     const handleDeleteProduct = async (id) => {
         try {
-            const response = await fetch(`/api/db/products/${id}`, {
+            const response = await fetch(`/api/products/${id}`, {
                 method: 'DELETE',
             });
             if (response.ok) {

@@ -27,7 +27,7 @@ const Home = () => {
     const handleAddProduct = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch('/api/db/products', {
+            const response = await fetch('http://localhost:5000/products', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -46,7 +46,7 @@ const Home = () => {
 
     const handleDeleteProduct = async (id) => {
         try {
-            const response = await fetch(`/api/db/products/${id}`, {
+            const response = await fetch(`http://localhost:5000/products/${id}`, {
                 method: 'DELETE',
             });
             if (response.ok) {

@@ -1,0 +1,16 @@
+{
+    "rewrites": [
+      {
+        "source": "/api/products/:id",
+        "destination": "/api/products/:id"
+      }
+    ],
+    "builds": [
+      { "src": "package.json", "use": "@vercel/static-build", "config": { "distDir": "build" } },
+      { "src": "db.json", "use": "@vercel/json-server" }
+    ],
+    "routes": [
+      { "src": "/api/(.*)", "dest": "/api/$1" }
+    ]
+  }
+  
