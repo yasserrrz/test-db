@@ -1,16 +1,16 @@
 {
-    "version": 2,
-    "builds": [
+    "rewrites": [
       {
-        "src": "api/db.js",
-        "use": "@vercel/node"
+        "source": "/api/products/:id",
+        "destination": "/api/products/:id"
       }
     ],
+    "builds": [
+      { "src": "package.json", "use": "@vercel/static-build", "config": { "distDir": "build" } },
+      { "src": "db.json", "use": "@vercel/json-server" }
+    ],
     "routes": [
-      {
-        "src": "/api/(.*)",
-        "dest": "/api/db.js"
-      }
+      { "src": "/api/(.*)", "dest": "/api/$1" }
     ]
   }
   
